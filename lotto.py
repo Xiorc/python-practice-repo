@@ -39,12 +39,10 @@ while True:
 
             for j in range(getlotto):
                 lotto_all = list(range(1,46))
-                mylist=0
                 while len(lotto_all)>39:
                     random.shuffle(lotto_all)
                     get_num = lotto_all.pop()
-                    mylotto = mylottolist[j].append(get_num)
-                    mylist+=1
+                    mylottolist[j].append(get_num)
             print('\n내가 구입한 로또의 내역은 다음과 같다.\n')
             for each_num in mylottolist:
                 each_num.sort()
